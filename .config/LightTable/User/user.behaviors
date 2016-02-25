@@ -29,7 +29,7 @@
  [:editor :lt.objs.style/set-theme "solarized-light"]
 
  [:editor :lt.objs.editor/blink-rate 0]
- [:editor.behaviors :-lt.objs.settings/on-behaviors-editor-save]
+;; [:editor.behaviors :-lt.objs.settings/on-behaviors-editor-save]
 
  ;; Here we can add behaviors to just clojure editors
  [:editor.clojure :lt.plugins.clojure/print-length 1000]
