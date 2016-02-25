@@ -109,6 +109,12 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(monokai
+                         graham
+                         gruvbox
+                         soothe
+                         tsdh-dark
+                         twilight-antibright
+                         zen-and-art
                          django
                          adwaita
                          espresso
@@ -125,9 +131,9 @@ values."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
-   dotspacemacs-default-font '("Source Code Pro"
-                               :size 13
-                               :weight normal
+   dotspacemacs-default-font '("Input Mono Narrow"
+                               :size 14
+                               :weight light
                                :width normal
                                :powerline-scale 1.1)
    ;; The leader key

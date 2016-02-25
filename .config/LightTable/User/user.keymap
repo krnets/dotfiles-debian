@@ -20,6 +20,13 @@
  [:editor "alt-w" :editor.watch.watch-selection]
  [:editor "alt-shift-w" :editor.watch.unwatch]
 
+ [:app "ctrl-shift-space" :show-commandbar-transient]
+ [:app "ctrl-shift-o" :navigate-workspace-transient]
+
+ [:editor "alt-enter" :eval-editor-form]
+ [:editor "alt-shift-enter" :eval-editor]
+
+
  ;; To subtract a keybinding, prefix the key with '-'  e.g.
  ;;  [:app "-ctrl-shift-d" :docs.search.show]
 ]

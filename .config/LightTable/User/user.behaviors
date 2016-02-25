@@ -26,7 +26,10 @@
 
  ;; The editor tag is applied to all editors
  [:editor :lt.objs.editor/no-wrap]
- [:editor :lt.objs.style/set-theme "default"]
+ [:editor :lt.objs.style/set-theme "solarized-light"]
+
+ [:editor :lt.objs.editor/blink-rate 0]
+ [:editor.behaviors :-lt.objs.settings/on-behaviors-editor-save]
 
  ;; Here we can add behaviors to just clojure editors
  [:editor.clojure :lt.plugins.clojure/print-length 1000]
@@ -43,10 +46,22 @@
  ;; Show line numbers
  ;; [:editor :lt.objs.editor/line-numbers]
  ;; Customize font
- ;; [:app :lt.objs.style/font-settings "Courier New" "11"]
+  [:app :lt.objs.style/font-settings "Input Mono Narrow" "12" "1.2"]
  ;; Auto-close characters e.g. '{[("'
- ;; [:editor :lt.objs.editor/autoclose-brackets]
+ [:editor :lt.objs.editor/autoclose-brackets]
  ;; Tab settings: Use real tabs, tab size in spaces, spaces per indent
 ;; [:editor :lt.objs.editor/tab-settings false 2 2]
+
+  [:editor.javascript :lt.plugins.jsbeautify/jsbeautify-options {
+                                  :indent_size 2
+                                  :indent_level 0
+                                  :preserve_newlines true
+                                  :max_preserve_newlines 10}]
+
+[:editor.javascript :lt.plugins.jsbeautify/on-save]
+
+
+
 ]
+
 
